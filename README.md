@@ -8,4 +8,4 @@ Still in development so come back later to see a native build come out, its firs
 Performace will be very poor, since its in its early stage, so come here to submit a issue from a certain game/VR tool and try and commit to this repo.
 This may or may not be built in Rust or C/C++, I just gotta decide on which one I want to do. Also a Discord Server is coming soon!
 
-*note: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoohtly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.
+*note: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoohtly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.*
