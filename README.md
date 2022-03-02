@@ -9,3 +9,8 @@ Performace will be very poor, since its in its early stage, so come here to subm
 This may or may not be built in Rust or C/C++, I just gotta decide on which one I want to do. Also a Discord Server is coming soon!
 
 *note: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoohtly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.*
+
+
+
+**LOOK HERE FOR INFO PLEASE**
+THIS HAS BEEN MODIFIED SO THAT THERE IS 2 DIFFERENT BRANCHES THAT HAVE THEIR OWN THINGS, THE "c/cpp" and "rust" NEITHER ARE THE MAIN BRANCH, BUT ARE GOING TO BE MADE TOGETHER, C/CPP WILL BE THE MOST UPDATED WHILE THE RUST BRANCH MAY BE THE MOST STABLE.
