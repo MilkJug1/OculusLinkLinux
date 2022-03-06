@@ -20,6 +20,7 @@ all: $(BINARY)
 
 $(BINARY): $(OBJECTS)
 	$(CC) -o $@ $^
+	cp $(BINARY) ./build
 
 # only want the .cpp file dependency here, thus $< instead of $^.
 #
