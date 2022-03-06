@@ -1,6 +1,6 @@
-# Makefile for compiling this project for C++, this wasn't entirely written by me, that was Gabriel Parmer on youtube. Thanks! 
+# Makefile for compiling this project for C++, this wasn't entirely written by me, that was Gabriel Parmer on youtube. Thanks to him! 
 BINARY=oll
-CODEDIRS=. src/lib
+CODEDIRS=. src/lib/
 INCDIRS=. ./src/include/ # can be list
 
 CC=g++
