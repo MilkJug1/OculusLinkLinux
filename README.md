@@ -1,5 +1,5 @@
 
-** THIS ONLY WORKS FOR THE RUST BRANCH, IF YOU ARE NOT ON THE RUST BRANCH, PLEASE GO TO IT. DOES NOT WORK ATM FOR THE C/CPP BRANCH, AND PARTLY THE MAIN.**
+**THIS ONLY WORKS FOR THE RUST BRANCH, IF YOU ARE NOT ON THE RUST BRANCH, PLEASE GO TO IT. DOES NOT WORK ATM FOR THE C/CPP BRANCH, AND PARTLY THE MAIN.**
 
 # OculusLinkLinux
 This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux. 
