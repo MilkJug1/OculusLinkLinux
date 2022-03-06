@@ -1,2 +1,4 @@
-.Ideas
-.Resources
+Ideas
+Resources
+./build/*.d
+./src/lib/*.d
