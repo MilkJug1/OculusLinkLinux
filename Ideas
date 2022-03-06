@@ -1,7 +1,0 @@
-Oculus Link, scopes for the Quest and then inits a driver to then take the wheel(in means of inits the vr server and tries to find the device when its plugged in)
-
-
-
-Ways of doing it:
-#1 Checking for the quest connect, via usb & adb(will have to learn that later) then init a  vr server and display. Just the basics
-^^ may not work  d
