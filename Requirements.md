@@ -7,7 +7,10 @@ What you need in order to for this to work is:
 
 - Have SteamVR installed and run it when you launch it
 
--OpenXR installed on your Linux Distro
+-OpenXR & Monado-if you do not have this, please make sure to refrence the building from source section please-installed on your Linux Distro
 
 # Building from source
- - Have the OpenXR SDK either from Oculus or from Kronos themselves. (Either should work) 
+ - Have both [Monado](https://monado.dev/) & [OpenXR](https://www.khronos.org/openxr/) installed on your Linux Distro of choice
+ If you do not have either of these, make sure to follow the instructions in [getting-started-with-monado](https://monado.freedesktop.org/#getting-started-with-monado)
+
+ - (INSERT OTHER THINGS HERE)
