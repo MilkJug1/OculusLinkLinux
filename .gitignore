@@ -1,4 +1,6 @@
 
 ./build/*.d
 ./src/lib/*.d
+./src/lib/*.o
 Resources&Ideas
+.vscode
