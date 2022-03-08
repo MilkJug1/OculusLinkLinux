@@ -2,6 +2,7 @@
 BINARY=oll
 CODEDIRS=. src/lib/
 INCDIRS=. ./src/include/ # can be list
+OINCDIRS=. ./OpenXR-SDK/include/openxr/
 
 CC=g++
 OPT=-O0
@@ -9,6 +10,7 @@ OPT=-O0
 DEPFLAGS=-MP -MD
 # automatically add the -I onto each include directory
 CFLAGS=-Wall -Wextra -g $(foreach D,$(INCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
+CFLAGS=-Wall -Wextra -g $(foreach D, $(OINCDIRS), -I$(D)) $(OPT) $(DEPFLAGS) 
 
 # for-style iteration (foreach) and regular expression completions (wildcard)
 CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cpp))
@@ -21,7 +23,7 @@ all: $(BINARY)
 $(BINARY): $(OBJECTS)
 	$(CC) -o $@ $^
 	cp $(BINARY) ./build
-
+	
 # only want the .cpp file dependency here, thus $< instead of $^.
 #
 %.o:%.cpp
