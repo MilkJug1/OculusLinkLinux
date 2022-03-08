@@ -27,7 +27,7 @@ If you want to see it, then [click here](https://trello.com/b/Q6wLkRCi/progess-w
 
 # Credits
 Thanks to all of the people working on the OpenXR Project
-Thanks to everyone working on monado
+Thanks to everyone working on Monado(The OpenSource XR platform for linux )
 And believe it or not, thanks to Oculus for making the Quest(Even though no Linux support yet.)
 
 
