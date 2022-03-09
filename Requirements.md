@@ -7,7 +7,7 @@ What you need in order to for this to work is:
 
 - Have SteamVR installed and run it when you launch it
 
--OpenXR & Monado-if you do not have this, please make sure to refrence the building from source section please-installed on your Linux Distro
+- OpenXR & Monado installed on your Linux Distro, if you don't have it installed please refrence the Building from source section to find out how to install it.
 
 # Building from source
  - Have both [Monado](https://monado.dev/) & [OpenXR](https://www.khronos.org/openxr/) installed on your Linux Distro of choice
