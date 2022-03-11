@@ -1,7 +1,7 @@
 # Makefile for compiling this project for C++, this wasn't entirely written by me, that was Gabriel Parmer on youtube. Thanks to him! 
 BINARY=oll
 CODEDIRS=. src/lib/
-INCDIRS=. ./src/include/ # can be list
+INCDIRS=. src/include/ # can be list
 OINCDIRS=. ./OpenXR-SDK/include/openxr/
 
 CC=g++
