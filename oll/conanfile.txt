@@ -1,0 +1,15 @@
+[requires]
+imgui/1.87
+glfw/3.3.6
+glew/2.1.0
+xorg/system
+
+[generators]
+make
+
+
+[imports]
+./res/bindings, imgui_impl_glfw.cpp -> ../src/include
+./res/bindings, imgui_impl_opengl3.cpp -> ../src/include
+./res/bindings, imgui_impl_glfw.h -> ../src/include
+./res/bindings, imgui_impl_opengl3.h -> ../src/include
