@@ -1,7 +1,13 @@
 ./build/*.d
 ./src/lib/*.d
 ./src/lib/*.o
+./build/conan_imports_manifest.txt
+./build/conan.lock
+./build/conanbuildinfo.mak
+./build/conanbuildinfo.txt 
+./build/conaninfo.txt 
 Resources&Ideas
 .vscode
 TODO 
 oll.code-workspace
+
