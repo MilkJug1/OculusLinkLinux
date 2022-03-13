@@ -19,7 +19,7 @@
 BINARY=oll
 CODEDIRS=. src/lib/
 INCDIRS=. src/include/ # can be list
-OINCDIRS=. ./OpenXR-SDK/include/openxr/
+OINCDIRS=. ./OpenXR-SDK
 
 # automatically add the -I onto each include directory
 CFLAGS=-Wall -Wextra -g $(foreach D,$(INCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
@@ -47,7 +47,7 @@ all: $(BINARY)
 	cp $(BINARY) ./build
 
  %.o: %.cpp
-	g++ -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS) $< -o $@
+	g++ -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS) $(OFLAGS) $< -o $@
 
 clean:
 	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
