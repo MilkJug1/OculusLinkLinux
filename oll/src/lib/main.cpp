@@ -1,8 +1,3 @@
-#include "openxr/openxr.h"
-#include "../include/main.h"
-
-
-int main()
-{
-  print("test");
-}
+// NO CODE YET, JUST SETTING UP THE BASE OF THE PROJECT BEFORE DOING ANYTHING ELSE
+// CODE WILL COME LATER, JUST NOT RIGHT NOW SINCE QUEST IS GETTING WORKED ON SINCE I 
+// ACCIDENTALLY BROKE IT. 
