@@ -21,9 +21,9 @@ The full list of requirements is in the [Requirements](./Requirements.md) folder
 
 
 # OLL Progress 
-Please if you want to see the progress of this project, then check out the trello board that I made(its not entirly full of things atm, but once later down the line it will look much more like a todo list or something like that).
+If you want to see the progess of this project, you can see the [Progress](./Progress.md) <-*TODO* folder, and also the Project page here on github.
 
-If you want to see it, then [click here](https://trello.com/b/Q6wLkRCi/progess-with-oll) for it.
+If you want to see it, then [click here](https://github.com/MilkJug1/OculusLinkLinux/projects/3) for it.
 
 # Credits
 Thanks to all of the people working on the OpenXR Project
