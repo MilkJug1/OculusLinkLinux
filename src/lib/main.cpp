@@ -3,6 +3,9 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 
+// This is NOT the actual OLL implementation. This was just some test code from a tutorial that I was looking at
+// for OpenVR to see if I could use it for the OLL project, I may use both OpenVR and OpenXR. Don't really know yet.
+
 #include <utils.h>
 
 // ----------------
