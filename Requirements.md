@@ -5,12 +5,16 @@ What you need in order to for this to work is:
 
 - Own and have the Quest (or Quest 2) plugged in. (If this has a seperate android app, sideload that into the quest)
 
-- Have SteamVR installed and run it when you launch it
+- Have SteamVR installed or other OpenVR things.
+
+- Have conan installed, [if you do not have conan installed then click here](https://docs.conan.io/en/latest/installation.html)
+
 
 - OpenXR & Monado installed on your Linux Distro, if you don't have it installed please refrence the Building from source section to find out how to install it.
 
 # Building from source
- - Have both [Monado](https://monado.dev/) & [OpenXR](https://www.khronos.org/openxr/) installed on your Linux Distro of choice
- If you do not have either of these, make sure to follow the instructions in [getting-started-with-monado](https://monado.freedesktop.org/#getting-started-with-monado)
+- Download SteamVR from steam and also install [OpenXR](https://www.khronos.org/openxr/) and also [Monado](https://monado.dev/)
+- D
+
 
  - (INSERT OTHER THINGS HERE)
