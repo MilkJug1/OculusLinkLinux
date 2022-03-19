@@ -19,6 +19,10 @@ This Open-Source Project is trying to get Oculus Quest link(Meta link?) working 
 # Requirements
 The full list of requirements is in the [Requirements](./Requirements.md) folder.
 
+Also here is how it would look in a terminal
+
+[![asciicast](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k.svg)](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k)
+
 
 # OLL Progress 
 If you want to see the progess of this project, you can see the [Progress](./Progress.md) <-*TODO* folder, and also the Project page here on github.
