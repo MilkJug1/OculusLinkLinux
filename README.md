@@ -48,6 +48,8 @@ If doing ```conan install``` gives any errors(mainly any that are related to the
 
 3. then cd back into into oll/(can do this by ```cd .. ```) and then run ```make```
 
-
-
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+
+
+# Socials 
+I finally got the [Discord Sever](https://discord.gg/8a4ETJ4eXc) up, its a bit barebones, but it will be a place for people to chat about the project, and also to discuss the project. An icon for the server is coming too.
