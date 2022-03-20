@@ -18,7 +18,7 @@ Rust: the entirety of this project written in rust, the original language that t
 This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux. 
 
 # Requirements
-The full list of requirements is in the [Requirements](./Requirements.md) folder.
+The full list of requirements is in the [Requirements](./INFO/Requirements.md) folder.
 
 Also here is how it would look in a terminal
 
