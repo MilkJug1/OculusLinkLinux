@@ -16,7 +16,7 @@ jobs:
     - uses: turtlebrowser/get-conan@v1.0
     
     - name: Install libegl-dev
-      run: apt-get install libegl-dev
+      run: sudo apt-get install libegl-dev
     
     - name: conan install ..
       run: cd build && conan install .. 
