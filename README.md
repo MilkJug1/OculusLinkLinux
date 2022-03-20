@@ -1,3 +1,4 @@
+
 # PLEASE READ THIS BEFORE CONTINUING ON
 
 **AT THE MOMENT, THIS DOES NOT WORK..**
@@ -9,15 +10,15 @@ This may or may not be built in Rust or C/C++, I just gotta decide on which one 
 
 *note: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoohtly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.*
 
-There is 2 different branches that have their own code base, it goes as followed: Main-> Has mainly cpp code, and makefiles. This is going to be the one that the most actively developed because of OpenXR. C/CPP: Just the same as main but not as updated
-Rust: the entirety of this project written in rust, the original language that this was going to be written in.
+There is 3 main different branches that have their own code base, it goes as followed: Main-> Similar to the C/CPP branch, just more Stable. This branch will be the least messed with. C/CPP: Just the same as main but more unstable and has more experimental features.
+Then the 3rd branch, Rust, is this whole project written in Rust. This branch hasn't been touched but after the c++ implementation, I will update the Rust branch to work.
 
 
 # OculusLinkLinux
 This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux. 
 
 # Requirements
-The full list of requirements is in the [Requirements](./Requirements.md) folder.
+The full list of requirements is in the [Requirements](./INFO/Requirements.md) folder.
 
 Also here is how it would look in a terminal
 

@@ -51,3 +51,4 @@ all: $(BINARY)
 
 clean:
 	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
+
