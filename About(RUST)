@@ -1,0 +1,38 @@
+
+**THIS ONLY WORKS FOR THE RUST BRANCH, IF YOU ARE NOT ON THE RUST BRANCH, PLEASE GO TO IT. DOES NOT WORK ATM FOR THE C/CPP BRANCH, AND PARTLY THE MAIN.**
+This is a file to describe the difference between the different "cores" meaning all of the folders inside of oll/
+
+To break it down, a core is a bin file that can be run by it self, while a module is kind of like a library.
+
+
+oll/connection
+-----------------
+This is a core/module that handles and manages the usb part of this project, 
+detecting the oculus quest, managing it so that this program actually can work properly.
+
+Inside of here there is a sub folder for the android/quest build of this. 
+-------------------------------------------------------------------------------------------
+
+
+oll/display
+----------- 
+A core/module that will be the main thing that drives the display, since that this will be after the connection module is 
+giving it the go ahead, since in order to activate the display we need to have checks that handle the connection and make
+sure its connected before anything happens. 
+
+We also want to send the desktop display to the quest. Kind of like Virtual Desktop, both for debugging and also just plain 
+usabilty. 
+
+oll/vrserver
+------------- 
+The vr server handles all of the traffic coming from Steam VR and manages it, what I mean by this is that the vr server
+works in conjuction with the display core so that we can have an active display but also have another core for vr traffic
+only for performace.
+
+
+
+oll/inputs
+---------- 
+By the folder name, it does exactly what you would expect, handles all of the inputs that come from the controller or
+the hand-tracking stuff.
+

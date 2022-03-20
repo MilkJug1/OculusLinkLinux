@@ -1,8 +1,5 @@
 
-**THIS ONLY WORKS FOR THE RUST BRANCH, IF YOU ARE NOT ON THE RUST BRANCH, PLEASE GO TO IT. DOES NOT WORK ATM FOR THE C/CPP BRANCH, AND PARTLY THE MAIN.**
-
-# OculusLinkLinux
-This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux. 
+# PLEASE READ THIS BEFORE CONTINUING ON
 
 **AT THE MOMENT, THIS DOES NOT WORK..**
 
@@ -13,7 +10,51 @@ This may or may not be built in Rust or C/C++, I just gotta decide on which one 
 
 *note: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoohtly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.*
 
+There is 2 different branches that have their own code base, it goes as followed: Main-> Has mainly cpp code, and makefiles. This is going to be the one that the most actively developed because of OpenXR. C/CPP: Just the same as main but not as updated
+Rust: the entirety of this project written in rust, the original language that this was going to be written in.
 
 
-**LOOK HERE FOR INFO PLEASE**
-THIS HAS BEEN MODIFIED SO THAT THERE IS 2 DIFFERENT BRANCHES THAT HAVE THEIR OWN THINGS, THE "c/cpp" and "rust" NEITHER ARE THE MAIN BRANCH, BUT ARE GOING TO BE MADE TOGETHER, C/CPP WILL BE THE MOST UPDATED WHILE THE RUST BRANCH MAY BE THE MOST STABLE.
+# OculusLinkLinux
+This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux. 
+
+# Requirements
+The full list of requirements is in the [Requirements](./Requirements.md) folder.
+
+Also here is how it would look in a terminal
+
+[![asciicast](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k.svg)](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k)
+
+
+# OLL Progress 
+If you want to see the progess of this project, you can see the [Progress](./Progress.md) <-*TODO* folder, and also the Project page here on github.
+
+If you want to see it, then [click here](https://github.com/MilkJug1/OculusLinkLinux/projects/3) for it.
+
+# Credits
+Thanks to all of the people working on the OpenXR Project
+
+Thanks to everyone working on Monado(The OpenSource XR platform for linux )
+
+And believe it or not, thanks to Oculus for making the Quest(Even though no Linux support yet.)
+
+Thanks to the Conan the C/C++ package manager that is opensource for making my life easier.
+
+
+# Installing
+**At the current moment there is no working public build, but you can try to compile from source.**
+
+1. Git clone this repo.
+```git clone https://github.com/MilkJug1/OculusLinkLinux.git```
+
+2. cd into OculusLinkLinux and then run 
+```git submodule init``` & ```cd build && conan install ..```
+
+If doing ```conan install``` gives any errors(mainly any that are related to the build system), then do ```conan install .. --build *nameofpackage*``` .
+
+3. then cd back into into oll/(can do this by ```cd .. ```) and then run ```make```
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+
+
+# Socials 
+I finally got the [Discord Sever](https://discord.gg/8a4ETJ4eXc) up, its a bit barebones, but it will be a place for people to chat about the project, and also to discuss the project. An icon for the server is coming too.
