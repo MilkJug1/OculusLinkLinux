@@ -16,7 +16,7 @@ jobs:
     - uses: turtlebrowser/get-conan@v1.0
     
     - name: conan install ..
-      run: conan install .. 
+      run: cd build && conan install .. 
       
     - name: Install dependencies
       run: make
