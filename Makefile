@@ -28,10 +28,10 @@ CFLAGS=-Wall -Wextra -g $(foreach D,$(INCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
 #OFLAGS=-Wall -Wextra -g $(foreach D, $(OINCDIRS), -I$(D)) $(OPT) $(DEPFLAGS) 
 
 # for-style iteration (foreach) and regular expression completions (wildcard)
-CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cpp))
+CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cc))
 # regular expression replacement
-OBJECTS=$(patsubst %.cpp,%.o,$(CFILES))
-DEPFILES=$(patsubst %.cpp,%.d,$(CFILES))
+OBJECTS=$(patsubst %.cc,%.o,$(CFILES))
+DEPFILES=$(patsubst %.cc,%.d,$(CFILES))
 
 
 
@@ -46,7 +46,7 @@ all: $(BINARY)
 	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
 	cp $(BINARY) ./build
 
- %.o: %.cpp
+ %.o: %.cpp %.cc
 	g++ -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
 
 clean:
