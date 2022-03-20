@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "../include/utils.h"
 
 SDL_Window* window;
 SDL_Renderer* renderer = NULL;
