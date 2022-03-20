@@ -43,7 +43,7 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -o $(BINARY)
+	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
 	cp $(BINARY) ./build
 
  %.o: %.cpp
