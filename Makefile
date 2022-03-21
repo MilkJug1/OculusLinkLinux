@@ -44,7 +44,7 @@ all: $(BINARY)
 
  $(BINARY): $(OBJECTS)
 	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
-	cp $(BINARY) build/
+	mv $(BINARY) build/
 	rm -rf $(OBJECTS) $(DEPFILES)
 
  %.o: %.cpp %.cc
