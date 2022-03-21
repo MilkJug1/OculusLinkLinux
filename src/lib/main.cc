@@ -176,7 +176,7 @@ int init_OpenVR()
     if (vr::VR_IsHmdPresent())
     {
         cout << "An HMD was successfully found in the system" << endl;
-        vr::VR_IsHmdPresent(true);
+        vr::VR_IsHmdPresent();
 
         // if (vr::VR_IsRuntimeInstalled()) {
         //	const char* runtime_path = vr::VR_GetRuntimePath();

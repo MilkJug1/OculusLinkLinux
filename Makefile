@@ -44,10 +44,12 @@ all: $(BINARY)
 
  $(BINARY): $(OBJECTS)
 	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
-	cp $(BINARY) ./build
+	cp $(BINARY) build/
+	rm -rf $(OBJECTS) $(DEPFILES)
 
  %.o: %.cpp %.cc
 	g++ -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
+
 
 clean:
 	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
