@@ -18,7 +18,7 @@
 
 BINARY=oll
 CODEDIRS=. src/lib/
-INCDIRS=. src/include/ # can be list
+INCDIRS=. src/include/ src/OpenXR-SDK/include/openxr # can be list
 #OINCDIRS=. ./openvr/headers/
 
 # automatically add the -I onto each include directory
