@@ -2,6 +2,7 @@
 sdl_ttf/2.0.18
 sdl/2.0.20
 openvr/1.16.8
+libusb/1.0.24
 
 [generators]
 make
