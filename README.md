@@ -46,6 +46,8 @@ Thanks to the Conan the C/C++ package manager that is opensource for making my l
 1. Git clone this repo.
 ```git clone https://github.com/MilkJug1/OculusLinkLinux.git```
 
+*IF IN A LATER COMMIT THE BUILD DIR IS NOT THERE THAN MAKE IT BY DOING ```mkdir```*
+
 2. cd into OculusLinkLinux and then run 
 ```git submodule init``` & ```cd build && conan install ..```
 
