@@ -43,7 +43,7 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
+	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -lusb -o $(BINARY)
 	mv $(BINARY) build/
 	rm -rf $(OBJECTS) $(DEPFILES)
 
