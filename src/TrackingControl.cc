@@ -1,5 +1,6 @@
- 
-int main24()
+#include <stdio.h>
+
+int main1()
 {
-    return 1;
+    printf("TODO, CREATE FUNCTIONALLY IN THE TRACKHMD.cc file\n");
 }
