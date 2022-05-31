@@ -17,7 +17,7 @@
  #----------------------------------------
 
 BINARY=oll
-CODEDIRS=. src/lib/
+CODEDIRS=. src/
 INCDIRS=. src/include/ src/OpenXR-SDK/include/openxr # can be list
 #OINCDIRS=. ./openvr/headers/
 
@@ -43,7 +43,7 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -o $(BINARY)
+	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
 	mv $(BINARY) build/
 	rm -rf $(OBJECTS) $(DEPFILES)
 
