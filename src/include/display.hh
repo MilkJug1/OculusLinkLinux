@@ -1,4 +1,1 @@
-int main3()
-{
-    return 3;
-}
+// TODO: FIX FILE STRUCTURE IN ORDER TO GET RID OF USELESS FILES.
