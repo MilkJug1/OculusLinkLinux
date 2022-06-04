@@ -1,4 +1,3 @@
-
 # PLEASE READ THIS BEFORE CONTINUING ON
 
 **AT THE MOMENT, THIS DOES NOT WORK..**
@@ -43,7 +42,7 @@ And believe it or not, thanks to Oculus for making the Quest(Even though no Linu
 
 Thanks to the Conan the C/C++ package manager that is open-source for making my life easier.
 
-###### Installing
+### Installing
 
 **At the current moment there is no working public build, but you can try to compile from source.**
 
@@ -58,6 +57,8 @@ If doing ```conan install``` gives any errors(mainly any that are related to the
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 
-###### Socials
+### Socials
 
-I finally got the [Discord Sever](https://discord.gg/8a4ETJ4eXc) up, its a bit barebones, but it will be a place for people to chat about the project, and also to discuss the project. An icon for the server is coming too.
+![Discord Banner 3](https://discordapp.com/api/guilds/936065347218448415/widget.png?style=banner3)
+
+I finally got the Discord Sever up, its a bit barebones, but it will be a place for people to chat about the project, and also to discuss the project. An icon for the server is coming too.
