@@ -7,7 +7,7 @@ Still in development so come back later to see a native build come out, its firs
 Performance will be very poor, since its in its early stage, so come here to submit a issue from a certain game/VR tool and try and commit to this repo.
 This may or may not be built in Rust or C/C++, I just gotta decide on which one I want to do. Also a Discord Server is coming soon!
 
-> **note**: 
+> **Note**
 > I am still trying to figure out how I want to distribute this, since not every will like to having to compile this.
 > I have considered a AUR package and a flatpak, but those are still up in the air.
 
