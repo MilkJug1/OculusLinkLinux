@@ -7,7 +7,9 @@ Still in development so come back later to see a native build come out, its firs
 Performance will be very poor, since its in its early stage, so come here to submit a issue from a certain game/VR tool and try and commit to this repo.
 This may or may not be built in Rust or C/C++, I just gotta decide on which one I want to do. Also a Discord Server is coming soon!
 
->**note**: this may be packaged as a flatpak in order for every else to use it, but im not sure if the whole thing will work smoothly. Mainly expect Arch to be the most stable, and be weary of the other distros binary of this since it may be less stable.*
+> **note**: 
+> I am still trying to figure out how I want to distribute this, since not every will like to having to compile this.
+> I have considered a AUR package and a flatpak, but those are still up in the air.
 
 There is 3 main different branches that have their own code base, it goes as followed: Main-> Similar to the C/CPP branch, just more Stable. This branch will be the least messed with. C/CPP: Just the same as main but more unstable and has more experimental features.
 Then the 3rd branch, Rust, is this whole project written in Rust. This branch hasn't been touched but after the c++ implementation, I will update the Rust branch to work.
