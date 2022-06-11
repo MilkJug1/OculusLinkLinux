@@ -22,7 +22,7 @@ This Open-Source Project is trying to get Oculus Quest link(Meta link?) working 
 
 ### Requirements
 
-The full list of requirements is in the [Requirements](./INFO/Requirements.md) folder.
+The full list of requirements is in the [Requirements](Requirements.md) folder.
 
 Also here is how it would look in a terminal
 
