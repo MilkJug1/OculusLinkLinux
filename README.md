@@ -17,12 +17,21 @@ Then the 3rd branch, Rust, is this whole project written in Rust. This branch ha
 ## OculusLinkLinux
 
 ![test](.github/IMAGES/OLfl-logo-5.png)
+<<<<<<< HEAD
 
 This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux.
 
 ### Requirements
 
 The full list of requirements is in the [Requirements](Requirements.md) folder.
+=======
+
+This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux.
+
+### Requirements
+
+The full list of requirements is in the [Requirements](./INFO/Requirements.md) folder.
+>>>>>>> main
 
 Also here is how it would look in a terminal
 
