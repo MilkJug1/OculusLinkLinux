@@ -5,24 +5,25 @@
  include build/conanbuildinfo.mak
 
  CCFLAGS              += $(CONAN_CFLAGS)
- CXXFLAGS            += $(CONAN_CXXFLAGS)
+ CXXFLAGS            += $(CONAN_CXXFLAGS) 
  CPPFLAGS            += $(addprefix -I, $(CONAN_INCLUDE_DIRS))
  CPPFLAGS            += $(addprefix -D, $(CONAN_DEFINES))
  LDFLAGS             += $(addprefix -L, $(CONAN_LIB_DIRS))
  LDLIBS              += $(addprefix -l, $(CONAN_LIBS))
  EXELINKFLAGS        += $(CONAN_EXELINKFLAGS)
+ CC 		     = g++
 
  #----------------------------------------
  #     Make variables for a sample App
  #----------------------------------------
 
 BINARY=oll
-CODEDIRS=. src/lib/
-INCDIRS=. src/include/ src/OpenXR-SDK/include/openxr # can be list
-#OINCDIRS=. ./openvr/headers/
+CODEDIRS=. src/
+INCDIRS=. src/include/ src/OpenXR-SDK/include # can be list
+OINCDIRS=. src/OpenXR-SDK/include/openxr
 
 # automatically add the -I onto each include directory
-CFLAGS=-Wall -Wextra -g $(foreach D,$(INCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
+CFLAGS=-Wall -Wextra -g -std=c++20 $(foreach D,$(INCDIRS),-I$(D)) $(foreach D,$(OINCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
 
 # do the exact same thing as the previous command, but only in the openxr directory.
 #OFLAGS=-Wall -Wextra -g $(foreach D, $(OINCDIRS), -I$(D)) $(OPT) $(DEPFLAGS) 
@@ -43,12 +44,12 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	g++ $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -lusb -o $(BINARY)
+	$(CC) $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
 	mv $(BINARY) build/
 	rm -rf $(OBJECTS) $(DEPFILES)
 
  %.o: %.cpp %.cc
-	g++ -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
+	$(CC) -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
 
 
 clean:
