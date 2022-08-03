@@ -29,7 +29,7 @@ Thanks to all of the people working on the OpenXR Project.
 
 Thanks to Valve and all of the contributors of the OpenVR project.
 
-~~Thanks to everyone working on Monado(The OpenSource XR platform for linux)~~ - Not needed now after commit (`https://github.com/MilkJug1/OculusLinkLinux/commit/0c800c52552d814c1ae87454e8d7d20990ecd5a5`)
+~~Thanks to everyone working on Monado(The OpenSource XR platform for linux)~~ - Not needed now after commit `https://github.com/MilkJug1/OculusLinkLinux/commit/0c800c52552d814c1ae87454e8d7d20990ecd5a5`
 
 And believe it or not, thanks to Oculus for making the Quest(Even though no Linux support yet.)
 
