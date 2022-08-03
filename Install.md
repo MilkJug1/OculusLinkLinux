@@ -17,6 +17,7 @@ git submodule init
 git submodule sync 
 git submodule update 
 ```
+
 > **Note**
 > You could only do the git submodule init, but in the even that the `OpenXR-SDK` folder is not cloned into the `src/ directory, you can choose to do the other commands. 
 
