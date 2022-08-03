@@ -1,6 +1,6 @@
 # Compiling and Installing from Source
 
-TODO: ADD DETAILED EXPLANATION FOR INSTALLING
+The install instructions here are a bit detailed, if I miss something and or do something wrong, please make a GH issue about it, or create a pr to fix it.
 
 First you need to clone this repo(since there is no prebuilt image for right now)
 
@@ -20,7 +20,13 @@ git submodule update
 > **Note**
 > You could only do the git submodule init, but in the even that the `OpenXR-SDK` folder is not cloned into the `src/ directory, you can choose to do the other commands. 
 
-Now one more thing before you can compile, cd into the `build/` dir and paste this in your terminal:
+Create the build dir via the 
+```sh
+mkdir build/
+```
+command, since in a recent commit, I removed it since it just hold stuff for your system, it held mine which could be an issue later on for other people.
+
+Than `cd build/` into that recently created directory and then run the following command:
 
 ```sh
 conan install .. 
