@@ -67,3 +67,6 @@ I didn't know if it was possible in Rust. I still have plans for it to be rewrit
 
 `android` - Since of figuring out how the Qos(Quest OS) works, it may be required to have an android app in order to send the correct information to the OLfL desktop app, and the Quest.
 This is only for right now, and can change in the future. We wouldn't have to require an android app if we knew we didn't need root in order to send and receive certain things.
+
+> **Warning**
+> I may just make the android branch a entirely separate repo, in order to help with separating the code bases, and also make it easier to build
