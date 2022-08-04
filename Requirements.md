@@ -12,7 +12,7 @@
 
 > **Warning**
 > I don't know if future Nvidia drivers will break how this will work, and also other Linux games.
-> If you have a Nvidia card(Like me!), and you are experenicing issues with using OLfL, make sure to downgrade your driver to see if it will help it. Otherwise, make an issue here.
+> If you have a Nvidia card(Like me!), and you are experiencing issues with using OLfL, make sure to downgrade your driver to see if it will help it. Otherwise, make an issue here.
 
 - Have a working USB 3 port with a USB 3 compatible cable, a speed test to see if your cable is good or not will be coming soon.
 
