@@ -1,4 +1,4 @@
-./build/*.d
+build/
 ./src/lib/*.d
 ./src/lib/*.o
 Resources&Ideas
