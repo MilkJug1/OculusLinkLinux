@@ -18,8 +18,9 @@
  #----------------------------------------
 
 BINARY=oll
-CODEDIRS=. src/
-INCDIRS=. src/include/ src/OpenXR-SDK/include # can be list
+CODEDIRS=. src/ # look in both the `src` dir and in the `src/driver`
+DRIVERDIR=. src/driver/
+INCDIRS=. "src/include/", "src/OpenXR-SDK/include", "src/driver/include"# can be list
 OINCDIRS=. src/OpenXR-SDK/include/openxr
 
 # automatically add the -I onto each include directory
@@ -30,9 +31,13 @@ CFLAGS=-Wall -Wextra -g -std=c++20 $(foreach D,$(INCDIRS),-I$(D)) $(foreach D,$(
 
 # for-style iteration (foreach) and regular expression completions (wildcard)
 CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cc))
+DFILES=$(foreach D,$(DRIVERDIR), $(wildcard $(D)/*.cc)) 
 # regular expression replacement
 OBJECTS=$(patsubst %.cc,%.o,$(CFILES))
 DEPFILES=$(patsubst %.cc,%.d,$(CFILES))
+
+DOBJ=$(patsubst $.cc,%.o,$(DFILES))
+DDEPFILE=$(patsubst %.cc,%.d,$(DFILES))
 
 
 
@@ -44,14 +49,16 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	$(CC) $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
+	$(CC) $(OBJECTS) $(DOBJ) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
 	mv $(BINARY) build/
-	rm -rf $(OBJECTS) $(DEPFILES)
+	#rm -rf $(OBJECTS) $(DEPFILES)
 
  %.o: %.cpp %.cc
-	$(CC) -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
+	(CC) -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
 
 
 clean:
-	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
+	rm -rf $(BINARY) 
+	rm -rf $(OBJECTS)
+	rm -rf $(DEPFILES)
 
