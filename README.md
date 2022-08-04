@@ -1,32 +1,21 @@
-# PLEASE READ THIS BEFORE CONTINUING ON
-
-**AT THE MOMENT, THIS DOES NOT WORK..**
-
-Still in development so come back later to see a native build come out, its first going to be on Arch since I develop on it, and then comes the other distros.
-
-Performance will be very poor, since its in its early stage, so come here to submit a issue from a certain game/VR tool and try and commit to this repo.
-This may or may not be built in Rust or C/C++, I just gotta decide on which one I want to do. Also a Discord Server is coming soon!
-
-> **Note**
-> I am still trying to figure out how I want to distribute this, since not every will like to having to compile this.
-> I have considered a AUR package and a flatpak, but those are still up in the air.
-
-There is 3 main different branches that have their own code base, it goes as followed: Main-> Similar to the C/CPP branch, just more Stable. This branch will be the least messed with. C/CPP: Just the same as main but more unstable and has more experimental features.
-Then the 3rd branch, Rust, is this whole project written in Rust. This branch hasn't been touched but after the c++ implementation, I will update the Rust branch to work.
-
-## OculusLinkLinux
-
+# OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux!
 ![test](.github/IMAGES/OLfl-logo-5.png)
+> **Note**
+> This project is not currently working, there will be a working build some time in the near future.
+> There is no ETA for when this project is working, though that might change.
 
-This Open-Source Project is trying to get Oculus Quest link(Meta link?) working on Linux, since there is no support for Oculus drivers on Linux.
+**Before we go on**,
+Please note that this a project that is still in its early infancy, this is also my first *big* open-source project. I'm stil deciding on a ton of things at the moment and figuring out some things with dealing with open-source,
+this is also a project to test my reverse-engineering skills and programming skills, so somethings are going to be objectively bad.
+
+## What is this project about?
+As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
+PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
 
 ### Requirements
 
 The full list of requirements is in the [Requirements](Requirements.md) folder.
 
-Also here is how it would look in a terminal
-
-[![asciicast](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k.svg)](https://asciinema.org/a/gxRFWbot2RLA0afKFZtNfSy0k)
 
 #### OLL Progress
 
@@ -40,7 +29,7 @@ Thanks to all of the people working on the OpenXR Project.
 
 Thanks to Valve and all of the contributors of the OpenVR project.
 
-Thanks to everyone working on Monado(The OpenSource XR platform for linux )
+~~Thanks to everyone working on Monado(The OpenSource XR platform for linux)~~ - Not needed now after commit 0c800c52552d814c1ae87454e8d7d20990ecd5a5
 
 And believe it or not, thanks to Oculus for making the Quest(Even though no Linux support yet.)
 
@@ -48,9 +37,11 @@ Thanks to the Conan the C/C++ package manager that is open-source for making my 
 
 ### Installing
 
-PLEASE GO INTO THE [INSTALL.MD FILE FOR RIGHT NOW](./Install.md)
+Follow the instructions in the [Install.md file, since it has a really detailed instalation process, though nothing is currently working](./Install.md)
 
-**At the current moment there is no working public build, but you can try to compile from source.**
+> **Note**
+> At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
+> it may work in the future for when you are compiling.
 
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
@@ -59,4 +50,23 @@ PLEASE GO INTO THE [INSTALL.MD FILE FOR RIGHT NOW](./Install.md)
 
 ![Discord Banner 3](https://discordapp.com/api/guilds/936065347218448415/widget.png?style=banner3)
 
-I finally got the Discord Sever up, its a bit barebones, but it will be a place for people to chat about the project, and also to discuss the project. An icon for the server is coming too.
+I finally got the Discord Sever up, its a bit barebones, as I have never hosted a discord server, but it will be a place for people to chat about the project, and also to discuss the project.
+
+### Branches
+In past iterations of this Readme, I talked about the multiple different branches each with their own codebase and whatnot.
+In this repo there are 4 different branches, each with their own different thing and also how up to date it is.
+
+The branch list goes as followed:
+
+`main` - The branch which will be the most stable, but can fluctate between codebases between the `rust` and `cpp` branch
+
+`cpp` - This project rewritten in C++, and also will function as a nightly branch.
+
+`rust` - As the name implies, this project just written in the rust programming language, OLfL was orginally going to be written in rust, though after thinking about it for a while,
+I didn't know if it was possible in Rust. I still have plans for it to be rewritten in rust, its just going to be when the first working c++ build is out to the public.
+
+`android` - Since of figuring out how the Qos(Quest OS) works, it may be required to have an android app in order to send the correct information to the OLfL desktop app, and the Quest.
+This is only for right now, and can change in the future. We wouldn't have to require an android app if we knew we didn't need root in order to send and receive certain things.
+
+> **Warning**
+> I may just make the android branch a entirely separate repo, in order to help with separating the code bases, and also make it easier to build
