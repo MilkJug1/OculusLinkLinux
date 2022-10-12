@@ -21,13 +21,9 @@ BINARY=oll
 CODEDIRS=. src/ # look in both the `src` dir and in the `src/driver`
 DRIVERDIR=. src/driver/
 INCDIRS=. "src/include/", "src/OpenXR-SDK/include", "src/driver/include"# can be list
-OINCDIRS=. src/OpenXR-SDK/include/openxr
 
 # automatically add the -I onto each include directory
 CFLAGS=-Wall -Wextra -g -std=c++20 $(foreach D,$(INCDIRS),-I$(D)) $(foreach D,$(OINCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
-
-# do the exact same thing as the previous command, but only in the openxr directory.
-#OFLAGS=-Wall -Wextra -g $(foreach D, $(OINCDIRS), -I$(D)) $(OPT) $(DEPFLAGS) 
 
 # for-style iteration (foreach) and regular expression completions (wildcard)
 CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cc))
