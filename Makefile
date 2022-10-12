@@ -35,8 +35,6 @@ DEPFILES=$(patsubst %.cc,%.d,$(CFILES))
 DOBJ=$(patsubst $.cc,%.o,$(DFILES))
 DDEPFILE=$(patsubst %.cc,%.d,$(DFILES))
 
-
-
  #----------------------------------------
  #     Make Rules
  #----------------------------------------
