@@ -5,11 +5,8 @@ Resources&Ideas
 .vscode
 TODO 
 oll.code-workspace
-oll/build/conan.lock
-oll/build/conan_imports_manifest.txt
-oll/build/conanbuildinfo.mak
-oll/build/conanbuildinfo.txt
-oll/build/conaninfo.txt
+build/
+build
 OculusLinkLinux.project
 OculusLinkLinux.workspace
 .codelite
