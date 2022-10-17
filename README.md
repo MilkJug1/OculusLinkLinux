@@ -1,4 +1,5 @@
-# OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux!
+# OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux
+
 ![test](.github/IMAGES/OLfl-logo-5.png)
 > **Note**
 > This project is not currently working, there will be a working build some time in the near future.
@@ -9,13 +10,23 @@ Please note that this a project that is still in its early infancy, this is also
 this is also a project to test my reverse-engineering skills and programming skills, so somethings are going to be objectively bad.
 
 ## What is this project about?
+
 As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
 PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
+
+|    Headset     |  Work?|
+| :------------: | :---: |
+|  Oculus Quest  |   ?   |
+| Oculus Quest 2 |   ?   |
+| Quest Pro      |   ?   |  
+
+> **Note**
+> This may be affected by the type of gpu you have and the driver, Nvidia GPUs are known to have issues with VR(Unfortunately I have one)
+> If that is the case, then I will update the graph accordingly.
 
 ### Requirements
 
 The full list of requirements is in the [Requirements](Requirements.md) folder.
-
 
 #### OLL Progress
 
@@ -43,7 +54,6 @@ Follow the instructions in the [Install.md file, since it has a really detailed 
 > At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
 > it may work in the future for when you are compiling.
 
-
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 
 ### Socials
@@ -53,6 +63,7 @@ Follow the instructions in the [Install.md file, since it has a really detailed 
 I finally got the Discord Sever up, its a bit barebones, as I have never hosted a discord server, but it will be a place for people to chat about the project, and also to discuss the project.
 
 ### Branches
+
 In past iterations of this Readme, I talked about the multiple different branches each with their own codebase and whatnot.
 In this repo there are 4 different branches, each with their own different thing and also how up to date it is.
 
