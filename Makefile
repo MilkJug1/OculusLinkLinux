@@ -45,7 +45,7 @@ all: $(BINARY)
  $(BINARY): $(OBJECTS)
 	$(CC) $(OBJECTS) $(DOBJ) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
 	mv $(BINARY) build/
-	#rm -rf $(OBJECTS) $(DEPFILES)
+	rm -rf $(OBJECTS) $(DEPFILES)
 
  %.o: %.cpp %.cc
 	(CC) -c $(CPPFLAGS) $(CXXFLAGS) $(CFLAGS)  $< -o $@
