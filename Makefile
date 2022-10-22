@@ -18,22 +18,21 @@
  #----------------------------------------
 
 BINARY=oll
-CODEDIRS=. src/ # look in both the `src` dir and in the `src/driver`
-DRIVERDIR=. src/driver/
-INCDIRS=. "src/include/", "src/OpenXR-SDK/include", "src/driver/include"# can be list
+CODEDIRS := src/ # Set CODEDIRS to the src dir that way it can look inside of there for .cc files
+CODEDIRS += src/driver/ # append the driver path to it so it will also look inside of the driver dir
+INCDIRS := 'src/include/' #VariabLe that has the path to the include dir, so that the compiler can look inside of it
+INCDIRS += 'src/OpenXR-SDK/include/' # Append OpenXR's include path so we can also look inside of there too, even tho OpenXR may not be used here
+INCDIRS += 'src/driver/include' # Also append the include dir inside of the driver/ folder
 
 # automatically add the -I onto each include directory
 CFLAGS=-Wall -Wextra -g -std=c++20 $(foreach D,$(INCDIRS),-I$(D)) $(foreach D,$(OINCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
 
 # for-style iteration (foreach) and regular expression completions (wildcard)
 CFILES=$(foreach D,$(CODEDIRS),$(wildcard $(D)/*.cc))
-DFILES=$(foreach D,$(DRIVERDIR), $(wildcard $(D)/*.cc)) 
+# DFILES=$(foreach D,$(DRIVERDIR), $(wildcard $(D)/*.cc)) 
 # regular expression replacement
 OBJECTS=$(patsubst %.cc,%.o,$(CFILES))
 DEPFILES=$(patsubst %.cc,%.d,$(CFILES))
-
-DOBJ=$(patsubst $.cc,%.o,$(DFILES))
-DDEPFILE=$(patsubst %.cc,%.d,$(DFILES))
 
  #----------------------------------------
  #     Make Rules
@@ -43,7 +42,7 @@ all: $(BINARY)
 
 
  $(BINARY): $(OBJECTS)
-	$(CC) $(OBJECTS) $(DOBJ) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
+	$(CC) $(OBJECTS) $(CXXFLAGS) $(LDFLAGS) $(LDLIBS) -lXau -lpthread -ldl -ludev -o $(BINARY)
 	mv $(BINARY) build/
 	rm -rf $(OBJECTS) $(DEPFILES)
 
