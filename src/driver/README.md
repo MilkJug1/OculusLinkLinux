@@ -20,3 +20,7 @@ There will be documentation on how this works and also what I have used to help 
 [Driver-Factory-Function](https://github.com/ValveSoftware/openvr/wiki/Driver-Factory-Function)
 
 [Steamworks' Documentation of VR and OpenVR](https://partner.steamgames.com/doc/features/steamvr)
+
+[A better much better OpenVR documentation alongwith code](https://github.com/finallyfunctional/openvr-driver-example)
+
+[Wiki of OpenVR Driver Example](https://github.com/finallyfunctional/openvr-driver-example/wiki)
