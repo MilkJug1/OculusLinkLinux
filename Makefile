@@ -2,7 +2,7 @@
  #     Prepare flags from make generator
  #----------------------------------------
 
- include build/conanbuildinfo.mak
+ -include build/conanbuildinfo.mak
 
  CCFLAGS              += $(CONAN_CFLAGS)
  CXXFLAGS            += $(CONAN_CXXFLAGS) 
@@ -24,6 +24,8 @@ INCDIRS := 'src/include/' #VariabLe that has the path to the include dir, so tha
 INCDIRS += 'src/OpenXR-SDK/include/' # Append OpenXR's include path so we can also look inside of there too, even tho OpenXR may not be used here
 INCDIRS += 'src/driver/include' # Also append the include dir inside of the driver/ folder
 
+BUILD = 'build/'
+
 # automatically add the -I onto each include directory
 CFLAGS=-Wall -Wextra -g -std=c++20 $(foreach D,$(INCDIRS),-I$(D)) $(foreach D,$(OINCDIRS),-I$(D)) $(OPT) $(DEPFLAGS)
 
@@ -39,6 +41,9 @@ DEPFILES=$(patsubst %.cc,%.d,$(CFILES))
  #----------------------------------------
 
 all: $(BINARY)
+
+deps: 
+	conan install . -if build/ --build
 
 
  $(BINARY): $(OBJECTS)
