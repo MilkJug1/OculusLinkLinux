@@ -1,0 +1,5 @@
+CompileFlags:
+  Add:
+  - "-Isrc/include"
+  - "-Isrc/include/driver"
+  - "-I=[~/.conan/data/]"
