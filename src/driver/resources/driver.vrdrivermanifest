@@ -1,0 +1,10 @@
+{
+	"alwaysActivate": false,
+	"name" : "oculus",
+	"directory" : "",
+	"resourceOnly" : false,
+	"hmd_presence" :
+	[
+		"2833.*"
+	]
+}
