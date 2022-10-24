@@ -32,6 +32,9 @@ The full list of requirements is in the [Requirements](Requirements.md) folder.
 
 If you want to see the progress of this project, you can see the [Progress](./Progress.md) <-*TODO* folder, and also the Project page here on github.
 
+The SteamVR driver, which has info in the [SteamVR driver readme](./src/driver/README.md), progress for this will be kept on #22, I will go into detail about how everything
+is going.
+
 If you want to see it, then [click here](https://github.com/MilkJug1/OculusLinkLinux/projects/3) for it.
 
 ##### Credits
