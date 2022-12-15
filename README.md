@@ -1,6 +1,7 @@
 # OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux
 
 ![test](.github/IMAGES/OLfl-logo-5.png)
+
 > **Note**
 > This project is not currently working, there will be a working build some time in the near future.
 > There is no ETA for when this project is working, though that might change.
@@ -14,11 +15,11 @@ this is also a project to test my reverse-engineering skills and programming ski
 As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
 PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
 
-|    Headset     |  Work?|
-| :------------: | :---: |
-|  Oculus Quest  |   ?   |
-| Oculus Quest 2 |   ?   |
-| Quest Pro      |   ?   |  
+| Headset        | Work? |
+|:--------------:|:-----:|
+| Oculus Quest   | ?     |
+| Oculus Quest 2 | ?     |
+| Quest Pro      | ?     |
 
 > **Note**
 > This may be affected by the type of gpu you have and the driver, Nvidia GPUs are known to have issues with VR(Unfortunately I have one)
@@ -61,7 +62,7 @@ Follow the instructions in the [Install.md file, since it has a really detailed 
 
 ### Socials
 
-![Discord Banner 3](https://discordapp.com/api/guilds/936065347218448415/widget.png?style=banner3)
+![Discord Banner 3](https://img.shields.io/discord/936065347218448415?label=OLfLDiscord&style=for-the-badge)
 
 I finally got the Discord Sever up, its a bit barebones, as I have never hosted a discord server, but it will be a place for people to chat about the project, and also to discuss the project.
 
@@ -75,6 +76,9 @@ The branch list goes as followed:
 `main` - The branch which will be the most stable, but can fluctate between codebases between the `rust` and `cpp` branch
 
 `cpp` - This project rewritten in C++, and also will function as a nightly branch.
+
+> **Note**
+> At this current time, this will be the main branch for a minute, tho after a while this should be up to date to the main repo. The reason for this is that im trying to see something with Github.
 
 `rust` - As the name implies, this project just written in the rust programming language, OLfL was orginally going to be written in rust, though after thinking about it for a while,
 I didn't know if it was possible in Rust. I still have plans for it to be rewritten in rust, its just going to be when the first working c++ build is out to the public.
