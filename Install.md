@@ -10,7 +10,9 @@ Do this by using this command
 git clone https://github.com/MilkJug1/OculusLinkLinux
 ```
 
-After this you need to initialize the submodules, which is only OpenXR for the time being, do this by using this command:
+~~After this you need to initialize the submodules, which is only OpenXR for the time being, do this by using this command:~~
+
+Don't worry about OpenXR right now, if you have created a fork that uses OpenXR for something with this, then you can ignore this.
 
 ```sh
 git submodule init 
@@ -19,22 +21,26 @@ git submodule update
 ```
 
 > **Note**
-> You could only use the git submodule init, but in the event that the `OpenXR-SDK` folder is not cloned into the `src/ directory, you can choose to do the other commands. 
+> You could only do the git submodule init, but in the event that the `OpenXR-SDK` folder is not cloned into the `src/ directory, you can choose to do the other commands.
+> Another note, OpenXR-SDK may not be needed in later revisions, but may become utilized later on in this lifespan of this project, for right now I am removing it from the Repo since OpenVR can handle of the talk to SteamVR.
 
-Create the build dir via the 
+Create the build dir via the
+
 ```sh
 mkdir build/
 ```
-command, since in a recent commit, I removed it since it just contains stuff for your system, it held mine which could be an issue later on for other people.
+
+command, since in a recent commit, I removed it since it just held stuff for your system, it info for my system, which could be an issue for your installation of Linux.
+
 
 Than `cd build/` into that recently created directory and then run the following command:
 
 ```sh
 conan install .. 
 ```
-> **Warning**
-> This may cause an error the first time you do this command, in that event, please run this command with the `--build` flag at the end. 
 
+> **Warning**
+> This may cause an error the first time you do this command, in that case, please run this command with the `--build` flag at the end.
 
 ^ You only need to do this command once, in the event that you add a library to the `conanfile.txt`, still don't unless you get an error that requires you to build it.
 
@@ -43,9 +49,9 @@ Finally, you can then compile with this command:
 ```sh
 make -j$(nproc) 
 ```
+
 > **Note**
 > the `-j$(nproc) flag is only for using multiple cores at once to build, the reason for this is to speed up the build times, since depending on how big this project gets, it can be quite long.
-
 
 The binary will compile inside of the `build/` dir.
 
