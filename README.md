@@ -51,10 +51,6 @@ Follow the instructions in the [Install.md file, since it has a really detailed 
 > At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
 > it may work in the future for when you are compiling.
 
-> **Note**
-> At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
-> it may work in the future for when you are compiling.
-
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 
 ### Socials
