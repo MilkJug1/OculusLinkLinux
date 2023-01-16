@@ -32,6 +32,7 @@ mkdir build/
 
 command, since in a recent commit, I removed it since it just held stuff for your system, it info for my system, which could be an issue for your installation of Linux.
 
+
 Than `cd build/` into that recently created directory and then run the following command:
 
 ```sh

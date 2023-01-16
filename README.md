@@ -1,16 +1,5 @@
 # OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux
 
-![test](.github/IMAGES/OLfl-logo-5.png)
-> **Note**
-> This project is not currently working, there will be a working build some time in the near future.
-> There is no ETA for when this project is working, though that might change.
-
-**Before we go on**,
-Please note that this a project that is still in its early infancy, this is also my first *big* open-source project. I'm stil deciding on a ton of things at the moment and figuring out some things with dealing with open-source,
-this is also a project to test my reverse-engineering skills and programming skills, so somethings are going to be objectively bad.
-
-## What is this project about?
-
 As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
 PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
 
@@ -23,6 +12,10 @@ PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to sup
 > **Note**
 > This may be affected by the type of gpu you have and the driver, Nvidia GPUs are known to have issues with VR(Unfortunately I have one)
 > If that is the case, then I will update the graph accordingly.
+
+
+As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
+PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
 
 ### Requirements
 
@@ -52,6 +45,10 @@ Thanks to the Conan the C/C++ package manager that is open-source for making my 
 ### Installing
 
 Follow the instructions in the [Install.md file, since it has a really detailed instalation process, though nothing is currently working](./Install.md)
+
+> **Note**
+> At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
+> it may work in the future for when you are compiling.
 
 > **Note**
 > At this current time(at the time of writing this), August 1st, 2022, there is no working build and or compiled version. You can try compiling from source for right now
