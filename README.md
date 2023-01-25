@@ -56,6 +56,7 @@ Follow the instructions in the [Install.md file, since it has a really detailed 
 ### Socials
 
 ![Discord Banner 3](https://discordapp.com/api/guilds/936065347218448415/widget.png?style=banner3)
+^ The above way does not currently work right now, please go to [This discord link here in order to get into the server, I wanted a flashy way for people to get in but I guess its not working](https://discord.gg/hxH9Xftznc)
 
 I finally got the Discord Sever up, its a bit barebones, as I have never hosted a discord server, but it will be a place for people to chat about the project, and also to discuss the project.
 
