@@ -20,7 +20,7 @@ jobs:
 
     
     - name: Install Depencies.
-      run: mkdir build && cd build && conan install .. 
+      run: mkdir build && cd build && conan install .. --build=nas --build=openvr --build=sdl --build=sdl_ttf
       
     - name: Make the actual file
       run: make
