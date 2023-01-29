@@ -1,8 +1,13 @@
 # OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux
 ![test](.github/IMAGES/OLfl-logo-5.png)
 > **Note**
-> This does not work at the current moment, as it is still a WIP, building this should complete but it will not do anything other then display the cli flags.
-> Once this gets an offical release, or a offical build that works, I will update this readme accordingly.
+> This project is not currently working, there will be a working build some time in the near future.
+> There is no ETA for when this project is working, though that might change.
+
+**Before we go on**,
+Please note that this a project that is still in its early infancy, this is also my first *big* open-source project. I'm stil deciding on a ton of things at the moment and figuring out some things with dealing with open-source,
+this is also a project to test my reverse-engineering skills and programming skills, so somethings are going to be objectively bad.
+
 
 As noted by the name, this project aims to either recreate, emulate, or find a way to get Oculus Link, or a Link-like app to allow for people to play
 PCVR games on Linux, since Oculus(Meta) has no support, and also no plans to support Linux.
