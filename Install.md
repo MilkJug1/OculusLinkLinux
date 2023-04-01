@@ -1,5 +1,10 @@
 # Compiling and Installing from Source
 
+# Please Read
+Before continuing on, at the time of writing which is March 31st, 2023, Conan has changed its way of handling everything and also switched to a new version, issue #29 has more info about this, but bascially the Conan has updated and is depricating support for Makefiles in the newest version.
+Due to this, it invalidates everything in this install.md, so at the moment. Do not follow this as it is currently not working. 
+
+
 The install instructions here are a bit detailed, if I miss something and or do something wrong, please make a GH issue about it, or create a pr to fix it.
 
 First you need to clone this repo(since there is no prebuilt image for right now)
