@@ -1,3 +1,5 @@
+> [!CAUTION]
+> This project still is in progress and has no offical build and does not work. It is still going to be getting worked. I still plan to work on this, but this project is on hold for the moment.
 # OculusLinkLinux, a way to play your PCVR games on quest via a USB on Linux
 ![test](.github/IMAGES/OLfl-logo-5.png)
 > **Note**
